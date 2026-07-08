@@ -3,19 +3,33 @@
   <PropertyGroup>
     <TargetFrameworks>net48;net9.0</TargetFrameworks>
     <AssemblyName>namasdev.Azure.Storage.en</AssemblyName>
-    <RootNamespace>namasdev.Azure.Storage.en</RootNamespace>    <Deterministic>true</Deterministic>
-    <Version>2.0.0</Version>
-    <AssemblyVersion>2.0.0</AssemblyVersion>
-    <FileVersion>2.0.0</FileVersion>
+    <RootNamespace>namasdev.Azure.Storage.en</RootNamespace>    
+    <Deterministic>true</Deterministic>
+    <Version>0.1.0</Version>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <FileVersion>0.1.0</FileVersion>
+    <Authors>Matias Alberto Lopez</Authors>
+    <Description>namasdev Azure Storage library (English)</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright © 2025 Matias Alberto Lopez</Copyright>
+    <PackageTags>namasdev</PackageTags>
+    <PackageProjectUrl>https://github.com/namasdev/namasdev.en</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/namasdev/namasdev.en</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Azure.Storage.Blobs" Version="12.22.0" />
-    <PackageReference Include="namasdev.Core.en" Version="2.0.0" />
+    <PackageReference Include="namasdev.Core.en" Version="0.1.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
     <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
